@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://loveyue2.bigeone.cn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Our Love Story</title>
+
+<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+<link href="./Our Love Story_files/default.css" type="text/css" rel="stylesheet">
+<script src="./Our Love Story_files/hm.js.下载"></script><script type="text/javascript" src="./Our Love Story_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./Our Love Story_files/garden.js.下载"></script>
+<script type="text/javascript" src="./Our Love Story_files/functions.js.下载"></script>
+<script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?49c9e828e38545414078413b222513c4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<div id="ShowAD" style="position: absolute; z-index: 100; top: 170px; left: 15px;">
+<div style="width:150px;height:18px;font-size:14px;font-weight:bold;text-align:center;CURSOR: hand;" onclick="closead();"><font color="ff0000">关闭</font></div>
+<a href="https://github.com/DearZh/love" target="_blank" title="title" onclick="closead();">
+<img border="0" alt="alt" src="./Our Love Story_files/bg.png" style="width: 150px;height: 203px"></a>
+</div>
+<script>
+    var bodyfrm = ( document.compatMode.toLowerCase()=="css1compat" ) ? document.documentElement : document.body;
+    var adst = document.getElementById("ShowAD").style;
+    adst.top = ( bodyfrm.clientHeight -530-22 ) + "px";
+    adst.left =  "15px";
+    function moveR() {
+        adst.top = ( bodyfrm.scrollTop + bodyfrm.clientHeight - 530-22) + "px";
+        adst.left ="15px";
+    }
+    setInterval("moveR();", 400);
+    function closead()
+    {
+        adst.display='none';
+    }
+</script>
+<div id="mainDiv">
+<div id="content" style="width: 1110px; height: 625px; margin-top: 48.5px; margin-left: 213px;">
+<div id="code" style="margin-top: 112.5px;">
+<span class="comments">我的爱人</span><br>
+<span class="space"><span class="comments">我会牵着你的手，走到我们满头白发的那一天</span><br>
+<span class="space"><span class="comments">我会守护你生命里的精彩，并陪伴你一路精彩下去。</span><br>
+<span class="space"><span class="comments">你的幸福快乐，是我一生的追求。</span><br>
+<span class="space">我会每一天带着笑脸，和你说早安，<br>
+<span class="space">我会每一晚与你道声晚安再入梦乡，<br>
+<span class="space">我会带你去所有你想去的地方，<br>
+<span class="space">陪你闹看你笑<br>
+<span class="space">历经你生命中所有的点点滴滴。<br>
+<span class="space">我期待这一生与你一起走过，<br>
+<span class="space">走到尽头再回头看尽一生铅华满地，<br>
+<span class="space">我期待与你慢慢变老，<br>
+<span class="space">等我们老到哪儿也去不了，<br>
+<span class="space">还能满载着一生的幸福快乐。<br>
+<span class="keyword">我愿意爱你直到老去，<br>
+<span class="space">我会为我们的未来撑起一片天空，<br>
+<span class="space">为我们的将来担负起一生的责任，<br>
+<span class="space">愿意为你去做每一件能让你开心快乐的事。<br>
+<span class="space">所有我们经历的点点滴滴，<br>都是我们一辈子最美的回忆。</span> <br>
+<br>
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></div>
+<div id="loveHeart">
+<canvas id="garden" width="670" height="625"></canvas>
+<div id="words" style="position: absolute; top: 243.5px; left: 723px;">
+<div id="messages" style="display: block;">
+月,我爱你！
+<div id="elapseClock"><span class="digit">3316</span> days <span class="digit">20</span> hours <span class="digit">51</span> minutes <span class="digit">03</span> seconds</div>
+</div>
+<div id="loveu" style="display: block;">
+Love u forever and ever.<br>
+<div class="signature">- wuxia2001</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2010, 10, 2);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+<div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-top.png&quot;);"></div></div><audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
