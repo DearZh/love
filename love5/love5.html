@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://loveyue6.bigeone.cn/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+      .words {
+    font-size: 150px;
+    font-family: 'Regular', cursive;
+    width: auto;
+    text-align: center;
+}
+   .days {
+    font-size: 216px;
+    font-family: 'Rye', cursive;
+    width: auto;
+    text-align: center;
+}
+
+.days-label {
+    font-size: 54px;
+}
+
+.seconds {
+    margin-top: 32px;
+    font-size: 32px;
+    font-family: "Monda_bo", Georgia, sans-serif;
+    width: auto;
+    text-align: center;
+}
+
+.seconds-label {
+     margin-top: 32px;
+    font-size: 32px;
+    font-family: "Monda_no", Georgia, sans-serif;
+    width: auto;
+    text-align: center; 
+}
+
+.container {
+    position: absolute;
+}
+
+@font-face {
+  font-family: 'Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rye Regular'), local('Rye-Regular'), url('./jscss/text1.ttf') format('woff');
+}
+
+@font-face {
+  font-family: 'Rye';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rye Regular'), local('Rye-Regular'), url('./jscss/Clockopia.ttf') format('woff');
+}
+@font-face {
+  font-family: 'Monda_no';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Monda'), local('Monda-Regular'), url('./jscss/Monda-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Monda_bo';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Monda Bold'), local('Monda-Bold'), url('./jscss/Monda-Bold.ttf') format('truetype');
+}
+
+   </style>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<title>Since The Day</title>
+<script src="./love5_files/hm.js.下载"></script><script src="./love5_files/jquery-1.8.3.min.js.下载" type="text/javascript"></script>
+<script type="text/javascript">
+    $(window).resize(function(){
+    console.log(parseInt(($(window).width() - $('.container').outerWidth())/2) + 'px');
+    $('.container').css({
+        position:'absolute',
+        left: ($(window).width() - $('.container').outerWidth())/2,
+        top: ($(window).height() - $('.container').outerHeight())/2
+    });
+    console.log($('.container').css('left'));
+});
+
+document.ready = function() {
+    $(window).resize();
+    updateNumbers();
+};
+
+
+function updateNumbers() {
+    //var start_time = 1253980800;
+    var beginTime = "2013-12-21 00:00:00";  
+    var start_time = Date.parse(beginTime)
+   // var start_time =  new Date("2014-11-11 10:10:10").Format("yyyy-MM-dd hh:mm:ss");
+    var duration = parseInt(Date.now()- start_time)/1000;
+
+    var seconds = parseInt( duration % 60);
+    if (seconds < 10)
+        seconds = "0" + seconds;
+    duration = parseInt(duration / 60);
+    var minutes = duration % 60;
+    if (minutes < 10)
+        minutes = "0" + minutes;
+    duration = parseInt(duration / 60);
+    var hours = duration % 24;
+    if (hours < 10)
+        hours = "0" + hours;
+    duration = parseInt(duration / 24);
+    var days = duration;
+    $('.days-number').text("" + days);
+    $('.seconds').text(hours + " hours " + minutes + " minutes " + seconds + " seconds");
+    setTimeout("updateNumbers()", 1000);
+}
+</script>
+<!--[if lte IE 7]>
+    <script type="text/javascript" src="/static/js/degrade.js"></script>
+    <![endif]-->
+</head>
+<body style="background-color: rgb(231, 163, 193); position: static;">
+<div class="container" style="position: absolute; left: 430.5px; top: 80px;">
+<div class="words"> 我爱你,月</div>
+<div class="days">
+<span class="days-number">2172</span>
+<span class="days-label">days</span>
+</div>
+<div class="seconds">19 hours 47 minutes 55 seconds</div>
+</div>
+<!-- <div id="ShowAD" style="position: absolute; z-index: 100; top: 170px; left: 15px;">
+<div style="width:150px;height:18px;font-size:14px;font-weight:bold;text-align:center;CURSOR: hand;" onclick="closead();"><font color="ff0000">关闭</font></div>
+<a href="https://github.com/DearZh/love" target="_blank" title="title" onclick="closead();">
+    <img border="0" alt="alt" src="./love5_files/bg.png" style="width: 150px;height: 203px"></a>
+</div> -->
+<script>
+    var bodyfrm = ( document.compatMode.toLowerCase()=="css1compat" ) ? document.documentElement : document.body;
+    var adst = document.getElementById("ShowAD").style;
+    adst.top = ( bodyfrm.clientHeight -530-22 ) + "px";
+    adst.left =  "15px";
+    function moveR() {
+        adst.top = ( bodyfrm.scrollTop + bodyfrm.clientHeight - 530-22) + "px";
+        adst.left ="15px";
+    }
+    setInterval("moveR();", 400);
+    function closead()
+    {
+        adst.display='none';
+    }
+</script>
+<script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?49c9e828e38545414078413b222513c4";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+<div style="position: static; display: none; width: 0px; height: 0px; border: none; padding: 0px; margin: 0px;"><div id="trans-tooltip"><div id="tip-left-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-top.png&quot;);"></div><div id="tip-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-top.png&quot;) repeat-x;"></div><div id="tip-right-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-top.png&quot;);"></div><div id="tip-right" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right.png&quot;) repeat-y;"></div><div id="tip-right-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-right-bottom.png&quot;);"></div><div id="tip-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-bottom.png&quot;) repeat-x;"></div><div id="tip-left-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left-bottom.png&quot;);"></div><div id="tip-left" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-left.png&quot;);"></div><div id="trans-content"></div></div><div id="tip-arrow-bottom" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-bottom.png&quot;);"></div><div id="tip-arrow-top" style="background: url(&quot;chrome-extension://edhchknefojhifoiebpcbkhcjlkkklci/imgs/map/tip-arrow-top.png&quot;);"></div></div><audio controls="controls" style="display: none;"></audio></body><style type="text/css">#yddContainer{display:block;font-family:Microsoft YaHei;position:relative;width:100%;height:100%;top:-4px;left:-4px;font-size:12px;border:1px solid}#yddTop{display:block;height:22px}#yddTopBorderlr{display:block;position:static;height:17px;padding:2px 28px;line-height:17px;font-size:12px;color:#5079bb;font-weight:bold;border-style:none solid;border-width:1px}#yddTopBorderlr .ydd-sp{position:absolute;top:2px;height:0;overflow:hidden}.ydd-icon{left:5px;width:17px;padding:0px 0px 0px 0px;padding-top:17px;background-position:-16px -44px}.ydd-close{right:5px;width:16px;padding-top:16px;background-position:left -44px}#yddKeyTitle{float:left;text-decoration:none}#yddMiddle{display:block;margin-bottom:10px}.ydd-tabs{display:block;margin:5px 0;padding:0 5px;height:18px;border-bottom:1px solid}.ydd-tab{display:block;float:left;height:18px;margin:0 5px -1px 0;padding:0 4px;line-height:18px;border:1px solid;border-bottom:none}.ydd-trans-container{display:block;line-height:160%}.ydd-trans-container a{text-decoration:none;}#yddBottom{position:absolute;bottom:0;left:0;width:100%;height:22px;line-height:22px;overflow:hidden;background-position:left -22px}.ydd-padding010{padding:0 10px}#yddWrapper{color:#252525;z-index:10001;background:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ab20.png);}#yddContainer{background:#fff;border-color:#4b7598}#yddTopBorderlr{border-color:#f0f8fc}#yddWrapper .ydd-sp{background-image:url(chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/ydd-sprite.png)}#yddWrapper a,#yddWrapper a:hover,#yddWrapper a:visited{color:#50799b}#yddWrapper .ydd-tabs{color:#959595}.ydd-tabs,.ydd-tab{background:#fff;border-color:#d5e7f3}#yddBottom{color:#363636}#yddWrapper{min-width:250px;max-width:400px;}</style></html>
